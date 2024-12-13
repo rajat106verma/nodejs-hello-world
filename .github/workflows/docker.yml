@@ -47,6 +47,9 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v4.1.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_PROJECT_KEY: "nodejs-hello-world"
+          SONAR_PROJECT_NAME: "Node.js Hello World"
+          SONAR_HOST_URL: "https://sonarcloud.io"
       
       # - name: SonarQube Scan
       #   run: |
