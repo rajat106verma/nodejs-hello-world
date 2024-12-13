@@ -50,6 +50,8 @@ jobs:
           SONAR_PROJECT_KEY: "nodejs-hello-world"
           SONAR_PROJECT_NAME: "Node.js Hello World"
           SONAR_HOST_URL: "https://sonarcloud.io"
+          SONAR_ORG: "rajat106verma"
+          
       
       # - name: SonarQube Scan
       #   run: |
