@@ -44,7 +44,7 @@ jobs:
           projectBaseDir: ./
           args: >
             -Dsonar.organization=rajat106verma
-            -Dsonar.projectKey=nodejs-hello-world
+            -Dsonar.projectKey=rajat106verma_nodejs-hello-world
             
 
       # - name: Set up SonarQube
