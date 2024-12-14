@@ -40,6 +40,11 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v4.1.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          projectBaseDir: ./
+          args: >
+            -Dsonar.organization=rajat106verma
+            -Dsonar.projectKey=nodejs-hello-world
             
 
       # - name: Set up SonarQube
