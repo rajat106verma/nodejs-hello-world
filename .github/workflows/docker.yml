@@ -38,11 +38,11 @@ jobs:
 
       - name: Set up SonarQube
         uses: sonarsource/sonarcloud-github-action@v2
-        with:
+        env:
           # sonar-project-key: "nodejs-hello-world"
           sonar-project-key: "rajat106verma_nodejs-hello-world"
           sonar-project-name: "Node.js Hello World"
-          # sonar-token: ${{ secrets.SONAR_TOKEN }}          
+          sonar-token: ${{ secrets.SONAR_TOKEN }}          
       
       - name: SonarQube Scan
         run: |
